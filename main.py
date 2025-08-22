@@ -1,16 +1,11 @@
 from stats import *
 
 
-def get_book_text(path):
-    with open(path) as f:
-        file_contents = f.read()
-        return file_contents
-
 def main():
     book_text = get_book_text('books/frankenstein.txt')
     print(book_text)
-
+    get_num_words()
+    frequencies = count_characters()
+    print(frequencies)
 
 main()
-get_num_words()
-count_characters()
