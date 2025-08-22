@@ -23,3 +23,17 @@ def count_characters():
         else:
             char_count[char] = 1
     return char_count
+
+
+def sorted_report():
+    char_count = count_characters()
+    def sort_on(items):
+        return items[1]
+    char_list = list(char_count.items())
+    char_list.sort(reverse=True, key=sort_on)
+    for x, y in char_list:
+        if x.isalpha() == False:
+            pass
+        else:
+            print(f"{x}: {y}")
+
