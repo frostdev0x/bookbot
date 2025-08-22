@@ -10,7 +10,7 @@ def get_num_words():
     split_book_text = book_text.split()
     for i in split_book_text:
         num_words += 1
-    print(f"{num_words} words found in the document")
+    return num_words
 
 
 def count_characters():
